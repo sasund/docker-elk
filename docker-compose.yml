@@ -7,7 +7,6 @@ logstash:
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./logstash/config:/etc/logstash/conf.d
-    - ./logstash/config/patterns:/etc/logstash/conf.d/patterns
   ports:
     - "5000:5000"
   links:
